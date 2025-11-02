@@ -1,0 +1,16 @@
+{
+  "deepseek": {
+    "apiKey": "your-api-key-here",
+    "apiUrl": "https://api.deepseek.com/v1/chat/completions"
+  },
+  "font": {
+    "outputDir": "./output/fonts",
+    "supportedFormats": ["ttf", "otf"]
+  },
+  "server": {
+    "port": 3001,
+    "corsOrigin": "http://localhost:3000"
+  }
+}
+
+

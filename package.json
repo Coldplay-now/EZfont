@@ -1,0 +1,14 @@
+{
+  "name": "quickfont",
+  "version": "0.1.0",
+  "description": "AI驱动的英文字体创作工具",
+  "scripts": {
+    "setup": "./setup.sh",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install && cd ../font-generator && pip3 install -r requirements.txt"
+  },
+  "private": true
+}
+
+

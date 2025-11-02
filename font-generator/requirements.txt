@@ -1,0 +1,7 @@
+fonttools>=4.47.0
+fontmake>=3.0.0
+svgpathtools>=1.6.0
+pillow>=10.1.0
+reportlab>=4.0.7
+
+

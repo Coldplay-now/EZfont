@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Fonts - AI Font Generator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1a1a1a",
+            "background-light": "#f8f8f8",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+    </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+</head>
+<body class="bg-background-light font-display text-gray-800">
+<div class="relative flex h-auto min-h-screen w-full group/design-root overflow-x-hidden">
+<div class="flex">
+<aside class="flex flex-col w-64 bg-white border-r border-gray-200 p-4 fixed h-full z-40">
+<div class="flex items-center gap-3 px-3 py-2 mb-6">
+<div class="size-8 text-primary shrink-0">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-gray-900">Font Factory AI</h2>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 text-sm font-semibold text-white bg-primary rounded-lg" href="#">
+<span class="material-symbols-outlined text-xl">folder_managed</span>
+<span>My Fonts</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">auto_fix_high</span>
+<span>AI Generator</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">help_outline</span>
+<span>Help Center</span>
+</a>
+</nav>
+<div class="mt-auto">
+<button class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/5 text-primary text-sm font-semibold leading-normal hover:bg-primary/10 transition-colors gap-2">
+<span class="material-symbols-outlined text-xl">workspace_premium</span>
+<span class="truncate">Upgrade Plan</span>
+</button>
+</div>
+</aside>
+<div class="flex flex-col flex-1 ml-64">
+<header class="flex items-center justify-end whitespace-nowrap px-10 py-4 fixed top-0 left-64 right-0 bg-background-light/90 backdrop-blur-sm z-30">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZARu1uAtWpvoXC76H9MD4-eLSPiR9UbXhLFeKJ-fiicaHdS7aaBxe48Q-ZQ7Zr2nYvCpq_wvNebW37gVpZ8GnRVxBeOvkPe-FdiIr9SNlxN2gWQicJCmyi4zX2dTA0jZxIsCyLzkCdEp0lW4T-ixfkK0_gFwhFwIYRZgIRtV9shCy5eCXILsvxikmvdOaxpWp58Rj4Uk43oLLeT50ssHrZHiF7L0sHaC9XHN9dUHAwhqyP8SNekdeu3x2EwOK3CzW0pVXROCHNKE0");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5 pt-24">
+<div class="flex flex-col w-full max-w-7xl px-4 lg:px-8">
+<div class="flex flex-wrap justify-between gap-4 items-center mb-8">
+<div class="flex flex-col gap-1">
+<h1 class="text-gray-900 text-3xl font-bold leading-tight tracking-[-0.02em]">My Font Creations</h1>
+<p class="text-gray-500 text-base font-normal leading-normal">Manage your previously generated fonts.</p>
+</div>
+<button class="flex items-center justify-center gap-2 rounded-xl h-11 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-base">add</span>
+<span class="truncate">Create New Font</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 p-5 bg-white rounded-xl border border-gray-200">
+<div class="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+<p class="text-4xl leading-snug text-gray-800 break-all text-center">Sphinx of black quartz, judge my vow.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Retro Script</h3>
+<p class="text-sm text-gray-500">Created on 2023-10-26</p>
+</div>
+<div class="relative group">
+<button class="p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+<div class="absolute right-0 mt-1 w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform-gpu scale-95 group-hover:scale-100">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Edit</a>
+<a class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50" href="#">Delete</a>
+</div>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-white text-primary text-sm font-semibold border border-gray-200 hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-semibold hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Preview</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-5 bg-white rounded-xl border border-gray-200">
+<div class="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+<p class="text-4xl leading-snug text-gray-800 break-all text-center">Grumpy wizards make toxic brew.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Modern Sans</h3>
+<p class="text-sm text-gray-500">Created on 2023-10-22</p>
+</div>
+<div class="relative group">
+<button class="p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+<div class="absolute right-0 mt-1 w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform-gpu scale-95 group-hover:scale-100">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Edit</a>
+<a class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50" href="#">Delete</a>
+</div>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-white text-primary text-sm font-semibold border border-gray-200 hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-semibold hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Preview</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-5 bg-white rounded-xl border border-gray-200">
+<div class="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+<p class="text-4xl leading-snug text-gray-800 break-all text-center">The quick brown fox jumps over the lazy dog.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Geometric Display</h3>
+<p class="text-sm text-gray-500">Created on 2023-10-18</p>
+</div>
+<div class="relative group">
+<button class="p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+<div class="absolute right-0 mt-1 w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform-gpu scale-95 group-hover:scale-100">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Edit</a>
+<a class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50" href="#">Delete</a>
+</div>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-white text-primary text-sm font-semibold border border-gray-200 hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-semibold hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Preview</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+
+</body></html>

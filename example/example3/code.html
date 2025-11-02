@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Font Generation - Font Specifications</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1a1a1a",
+            "background-light": "#f8f8f8",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+    </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+</head>
+<body class="bg-background-light font-display text-gray-800">
+<div class="relative flex h-auto min-h-screen w-full group/design-root overflow-x-hidden">
+<div class="flex">
+<aside class="flex h-screen w-64 flex-col border-r border-gray-200 bg-white sticky top-0">
+<div class="flex items-center gap-3 border-b border-gray-200 px-6 h-16">
+<div class="size-7 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900">Font Workshop</h2>
+</div>
+<nav class="flex flex-col p-4 flex-1">
+<a class="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-semibold text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">grid_view</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-semibold text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+<span>New Font</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-semibold text-white bg-primary" href="#">
+<span class="material-symbols-outlined text-xl">font_download</span>
+<span>My Fonts</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-semibold text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">tune</span>
+<span>Settings</span>
+</a>
+</nav>
+<div class="p-4 border-t border-gray-200">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZARu1uAtWpvoXC76H9MD4-eLSPiR9UbXhLFeKJ-fiicaHdS7aaBxe48Q-ZQ7Zr2nYvCpq_wvNebW37gVpZ8GnRVxBeOvkPe-FdiIr9SNlxN2gWQicJCmyi4zX2dTA0jZxIsCyLzkCdEp0lW4T-ixfkK0_gFwhFwIYRZgIRtV9shCy5eCXILsvxikmvdOaxpWp58Rj4Uk43oLLeT50ssHrZHiF7L0sHaC9XHN9dUHAwhqyP8SNekdeu3x2EwOK3CzW0pVXROCHNKE0");'></div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-gray-900">Olivia Rhye</span>
+<span class="text-xs text-gray-500">Pro Member</span>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex flex-1 flex-col">
+<header class="flex h-16 items-center justify-end whitespace-nowrap border-b border-gray-200 px-8 py-4 sticky top-0 bg-background-light/90 backdrop-blur-sm z-10">
+<div class="flex items-center gap-4">
+<a class="text-sm font-medium leading-normal text-gray-600 hover:text-primary transition-colors" href="#">Help Center</a>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-semibold leading-normal hover:bg-gray-700 transition-colors">
+<span class="truncate">Upgrade</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center p-8">
+<div class="flex w-full max-w-7xl flex-col">
+<div class="mb-8 flex flex-wrap items-start justify-between gap-4">
+<div class="flex flex-col gap-2">
+<p class="text-4xl font-bold leading-tight tracking-[-0.03em] text-gray-900">Font Specification: Retro Script</p>
+<p class="text-lg font-normal leading-normal text-gray-500">Generated based on your design prompt and parameters.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold leading-normal text-gray-700 transition-colors hover:bg-gray-100">
+<span class="material-symbols-outlined text-base">edit</span>
+<span class="truncate">Edit</span>
+</button>
+<button class="flex h-11 items-center justify-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-gray-700">
+<span class="material-symbols-outlined text-base">download</span>
+<span class="truncate">Download Font</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_420px]">
+<div class="flex flex-col gap-8">
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<h3 class="mb-4 text-lg font-semibold leading-tight text-gray-900">Basic Information</h3>
+<div class="grid grid-cols-2 gap-x-6 gap-y-4 text-sm md:grid-cols-3">
+<div><dt class="text-gray-500">Font Name</dt><dd class="mt-1 font-medium text-gray-800">Retro Script</dd></div>
+<div><dt class="text-gray-500">Version</dt><dd class="mt-1 font-medium text-gray-800">1.0</dd></div>
+<div><dt class="text-gray-500">Format</dt><dd class="mt-1 font-medium text-gray-800">OTF, TTF, WOFF2</dd></div>
+<div><dt class="text-gray-500">License</dt><dd class="mt-1 font-medium text-gray-800">Standard License</dd></div>
+<div><dt class="text-gray-500">Creation Date</dt><dd class="mt-1 font-medium text-gray-800">2024-07-28</dd></div>
+<div><dt class="text-gray-500">AI Model</dt><dd class="mt-1 font-medium text-gray-800">FontGen v2.1</dd></div>
+</div>
+</div>
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<h3 class="mb-4 text-lg font-semibold leading-tight text-gray-900">Design Parameters</h3>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="space-y-4">
+<h4 class="text-base font-semibold text-gray-800">Metrics</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between"><span class="text-gray-500">Ascender</span> <span class="font-medium text-gray-800">750</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Descender</span> <span class="font-medium text-gray-800">-250</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Cap Height</span> <span class="font-medium text-gray-800">700</span></div>
+<div class="flex justify-between"><span class="text-gray-500">x-Height</span> <span class="font-medium text-gray-800">500</span></div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-base font-semibold text-gray-800">Spacing</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between"><span class="text-gray-500">Tracking</span> <span class="font-medium text-gray-800">+15</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Kerning</span> <span class="font-medium text-gray-800">Optical</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Word Space</span> <span class="font-medium text-gray-800">250</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Line Height</span> <span class="font-medium text-gray-800">1.5x</span></div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-base font-semibold text-gray-800">Proportions</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between"><span class="text-gray-500">Weight</span> <span class="font-medium text-gray-800">Regular (400)</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Contrast</span> <span class="font-medium text-gray-800">Medium</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Width</span> <span class="font-medium text-gray-800">Normal</span></div>
+<div class="flex justify-between"><span class="text-gray-500">Slant</span> <span class="font-medium text-gray-800">0°</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<h3 class="mb-4 text-lg font-semibold leading-tight text-gray-900">Style Definition</h3>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Retro</span>
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Handwritten</span>
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Script</span>
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Playful</span>
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Elegant</span>
+<span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700">Vintage</span>
+</div>
+</div>
+</div>
+<div class="sticky top-24 flex h-fit flex-col gap-6">
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-semibold leading-tight text-gray-900">Live Preview</h3>
+<div class="flex items-center gap-2">
+<span class="text-sm text-gray-500">Size:</span>
+<select class="form-select w-24 rounded-lg border-gray-200 bg-gray-50 py-1 text-sm text-gray-800 focus:border-primary focus:ring-primary/50">
+<option>24px</option>
+<option selected="">36px</option>
+<option>48px</option>
+<option>72px</option>
+</select>
+</div>
+</div>
+<div class="mt-4 flex min-h-[160px] flex-col gap-4 rounded-lg bg-gray-100 p-4">
+<div class="flex-grow">
+<p class="text-4xl leading-snug text-gray-800" style="font-size: 36px;">The quick brown fox jumps over the lazy dog.</p>
+</div>
+<div class="relative">
+<input class="form-input w-full rounded-lg border border-gray-300 bg-white p-3 text-base text-gray-800 placeholder:text-gray-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/50" placeholder="Type custom text to preview..." type="text"/>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<h3 class="mb-4 text-lg font-semibold leading-tight text-gray-900">Character Set</h3>
+<div class="break-words rounded-lg bg-gray-100 p-4 text-2xl leading-relaxed tracking-wider text-gray-800">
+                                Abcdefghijklmnopqrstuvwxyz<br/>
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+                                0123456789 &amp;?!@#$%*()[]{}
+                            </div>
+</div>
+</div>
+</div>
+<div class="mb-16 mt-8">
+<div class="rounded-xl border border-gray-200 bg-white p-6">
+<h3 class="mb-4 text-lg font-semibold leading-tight text-gray-900">Full Specifications</h3>
+<div class="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2">
+<div class="space-y-4">
+<h4 class="border-b pb-2 text-base font-semibold text-gray-800">Design Rules</h4>
+<ul class="list-inside list-disc space-y-2 text-sm text-gray-600">
+<li>Consistent stroke modulation for a natural handwritten feel.</li>
+<li>Slightly condensed letterforms for efficient use of space.</li>
+<li>OpenType features include stylistic alternates and ligatures.</li>
+<li>Optimized for display sizes (24px and above).</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="border-b pb-2 text-base font-semibold text-gray-800">Technical Specs</h4>
+<ul class="list-inside list-disc space-y-2 text-sm text-gray-600">
+<li>Glyph Count: 256</li>
+<li>Hinting: Auto-hinted for screen readability.</li>
+<li>Embedding: Allowed (Print &amp; Preview).</li>
+<li>Unicode Ranges: Basic Latin, Latin-1 Supplement.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+
+</body></html>
