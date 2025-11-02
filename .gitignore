@@ -41,6 +41,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+backend/data/
+backend/fonts.db
+backend/database.sqlite
+
 # Config (keep example files)
 config/config.json
 !config/config.json.example
