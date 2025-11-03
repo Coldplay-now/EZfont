@@ -54,3 +54,6 @@ config/config.json
 !config/config.json.example
 !backend/.env.example
 
+# Documentation and test files
+temp/
+

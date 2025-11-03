@@ -21,3 +21,9 @@ python generator.py --spec <规格JSON文件> --output <输出目录> --font-id 
 - `requirements.txt`: Python依赖列表
 
 
+
+
+
+
+
+
